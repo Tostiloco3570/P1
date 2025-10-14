@@ -10,6 +10,7 @@ module carro::carro;
 module carro::carro {
     use std::debug::print;
     use std::string::{utf8};
+    const NUM: u8 = 100;
 
     public fun suma(x:u8){
         // let mut n1= 50u16;
@@ -34,15 +35,25 @@ module carro::carro {
         // n1 = n1 % entrada;
         // print(&n1);
 
-        let vdd: bool = true;
-        let fal: bool = false;
+        // let vdd: bool = true;
+        // let fal: bool = false;
         
-        print(&(vdd && fal));
+        // print(&(vdd && fal));
+        // print(&(vdd || fal));
+        // print(&(!vdd));
+        // print(&(!fal));
+
+        print(&(x == NUM));
+        print(&(x != NUM));
+        print(&(x > NUM));
+        print(&(x < NUM));
+        print(&(x >= NUM));
+        print(&(x <= NUM));
     }
 
     #[test]
     public fun testing(){
-        suma(5)
+        suma(100)
     }
 
 
