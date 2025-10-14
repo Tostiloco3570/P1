@@ -37,7 +37,7 @@ module carro::carro {
         let vdd: bool = true;
         let fal: bool = false;
         
-
+        print(&(vdd && fal));
     }
 
     #[test]
