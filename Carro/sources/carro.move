@@ -43,17 +43,45 @@ module carro::carro {
         // print(&(!vdd));
         // print(&(!fal));
 
-        print(&(x == NUM));
-        print(&(x != NUM));
-        print(&(x > NUM));
-        print(&(x < NUM));
-        print(&(x >= NUM));
-        print(&(x <= NUM));
+        // print(&(x == NUM));
+        // print(&(x != NUM));
+        // print(&(x > NUM));
+        // print(&(x < NUM));
+        // print(&(x >= NUM));
+        // print(&(x <= NUM));
+
+        // if(x == NUM){
+        //     print(&utf8(b"Número 100"));
+        // }else if (x < NUM){
+        //     print(&utf8(b"Número menor a 100"));
+        // }else{
+        //     print(&utf8(b"Número mayor a 100"));
+        // };
+        // print(&utf8(b"If terminado"));
+
+        let mut contador: u8 = 0;
+        // while(contador < x){
+        //     print(&contador);
+        //     contador = contador + 1;
+        // };
+        // print(&utf8(b"While terminado"));
+        loop{
+            contador = contador + 1;
+            if (contador == x){
+                break;
+            }else if (contador % 2 == 0){
+                print(&utf8(b"Numero par"));
+                print(&contador);
+                continue;
+            };
+            print(&utf8(b"Numero impar"));
+            print(&contador);
+        }
     }
 
     #[test]
     public fun testing(){
-        suma(100)
+        suma(150)
     }
 
 
